@@ -1,0 +1,41 @@
+# Java
+*.class
+*.jar
+*.war
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven
+krono-api/.mvn/
+krono-api/mvnw
+krono-api/mvnw.cmd
+
+# Node
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+logs/
+
+# Docker
+docker-data/
+
+# OS
+Thumbs.db
