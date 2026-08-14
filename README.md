@@ -1,3 +1,5 @@
+> ⚠️ **Prototipo/Skeleton** — Este proyecto es un skeleton en desarrollo. Las funcionalidades documentadas están planificadas pero no implementadas.
+
 # Krono Platform 🎓
 
 Plataforma educativa inteligente con roles **Admin > Profesor > Estudiante**, diseñada para gestionar cursos con integración de IA que potencia el aprendizaje, la enseñanza y la gestión del conocimiento.

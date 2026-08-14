@@ -8,7 +8,7 @@ services:
     environment:
       POSTGRES_DB: krono
       POSTGRES_USER: krono
-      POSTGRES_PASSWORD: secret
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
     ports:
       - "5432:5432"
     volumes:
@@ -30,8 +30,8 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/krono
       SPRING_DATASOURCE_USERNAME: krono
-      SPRING_DATASOURCE_PASSWORD: secret
-      JWT_SECRET: ${JWT_SECRET:-local-dev-secret-key-change-in-production}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
     depends_on:
       db:
         condition: service_healthy
